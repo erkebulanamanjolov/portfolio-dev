@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0d0d0d;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ff9900;
+  }
+  
+  .hero {
+    padding: 60px 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .avatar {
+    width: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #ff00ff, #ff9900);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #ff00ff, #ff9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p {
+    max-width: 600px;
+    margin: auto;
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn.primary {
+    background: white;
+    color: black;
+    border: none;
+  }
+  
+  .btn.outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .experience {
+    margin-top: 50px;
+  }
+  
+  .experience h3 {
+    color: #ff7043;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .icons img {
+    width: 40px;
+    transition: 0.3s;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .icons {
+      justify-content: center;
+    }
+  }
+  .section-title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .orange {
+    color: #ff7043;
+  }
+  
+  .blue {
+    color: #00aaff;
+  }
+  
+  .projects {
+    padding: 20px;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-info {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .project-info p {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .project-info h3 {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .experience-section {
+    padding: 30px;
+  }
+  
+  .experience-item {
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  .experience-item h3 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .experience-item span {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .experience-item p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  
+  .contact {
+    background: #111;
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  
+  .contact p {
+    max-width: 600px;
+    margin: auto;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  
+  .contact a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 16px;
+  }
+
